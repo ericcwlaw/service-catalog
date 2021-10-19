@@ -1,6 +1,6 @@
 # service-catalog
 
-Service catalog describes user facing REST and microservices APIs.
+This is a service catalog template to describe user facing REST and microservices APIs.
 
 # REST endpoints
 
