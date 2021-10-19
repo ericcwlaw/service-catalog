@@ -48,6 +48,7 @@ In this case, the logic in the REST endpoint should construct the incoming event
 // in the REST endpoint handler
 AsyncHttpRequest event = new AsyncHttpRequest(body);
 event.setMethod(httpRequest.getMethod())
+     .setUri(httpRequest.getUri())
      // for this example, we are setting a dummy value to illustrate how to send header as a parameter
      .setHeader("key", "value")
      // you may also convert the HTTP request body into PoJo or Map according to API contract
@@ -66,7 +67,7 @@ Object body
 int instance
 ```
 
-When this function is used with the REST automation system, the input object can be converted into an AsyncHttpRequest like this:
+When this function is used with the REST automation system, the input object can be read as an AsyncHttpRequest like this:
 
 ```java
 AsyncHttpRequest input = new AsyncHttpRequest(body);
