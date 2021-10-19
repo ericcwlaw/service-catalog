@@ -25,4 +25,4 @@ For each service, it should include the following:
 8. output - object type (pojo, map, etc.)
 9. exception - known cases
 10. upstream service
-11. download service if any
+11. downstream service if any
