@@ -48,7 +48,9 @@ In this case, the logic in the REST endpoint should construct the incoming event
 // in the REST endpoint handler
 AsyncHttpRequest event = new AsyncHttpRequest(body);
 event.setMethod(httpRequest.getMethod())
+     // for this example, we are setting a dummy value to illustrate how to send header as a parameter
      .setHeader("key", "value")
+     // you may also convert the HTTP request body into PoJo or Map according to API contract
      .setBody(util.stream2str(inputStream));
 
 return po.request("hello.world", 10000, event.toMap()).getBody();
