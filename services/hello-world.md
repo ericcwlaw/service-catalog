@@ -57,6 +57,10 @@ event.setMethod(httpRequest.getMethod())
 return po.request("hello.world", 10000, event.toMap()).getBody();
 ```
 
+# Database
+
+This service does not encapsulate a database
+
 # Input
 
 This function uses the untyped LambdaFunction with headers and a generic object payload.

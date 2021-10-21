@@ -20,9 +20,10 @@ For each service, it should include the following:
 3. domain
 4. application
 5. function registration (public/private, concurrency)
-6. input - parameters, object type (pojo, map, etc.)
-7. process - summary of business logic
-8. output - object type (pojo, map, etc.)
-9. exception - known cases
-10. upstream service
-11. downstream service if any
+6. database
+7. input - parameters, object type (pojo, map, etc.)
+8. process - summary of business logic
+9. output - object type (pojo, map, etc.)
+10. exception - known cases
+11. upstream service
+12. downstream service if any
